@@ -5,7 +5,7 @@ pipeline {
     }
     environment {
     registry = '948436781141.dkr.ecr.us-east-1.amazonaws.com/game'
-    registryCredential = 'jenkins-study'
+    registryCredential = 'jenkins-ecr'
     dockerimage = ''
   }
     stages {
