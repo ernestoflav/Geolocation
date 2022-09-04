@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools{
-        maven 'M2_HOME'
+        maven 'null'
     }
     environment {
     registry = '948436781141.dkr.ecr.us-east-1.amazonaws.com/game'
