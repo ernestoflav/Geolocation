@@ -4,7 +4,7 @@ pipeline {
         maven 'null'
     }
     environment {
-    registry = '948436781141.dkr.ecr.us-east-1.amazonaws.com/game'
+    registry = '948436781141.dkr.ecr.us-east-1.amazonaws.com/geolocation'
     registryCredential = 'jenkins-ecr'
     dockerimage = ''
   }
