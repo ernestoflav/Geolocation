@@ -1,6 +1,7 @@
 pipeline {
-    agent any
-    tools{
+    agent {
+        label ('master')
+    }
         maven 'M2_HOME'
     }
     environment {
