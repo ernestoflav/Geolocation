@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/carollebertille/Geolocation.git'
+                git branch: 'main', url: 'https://github.com/ernestoflav/Geolocation.git'
             }
         }
         stage('Code Build') {
@@ -34,7 +34,7 @@ pipeline {
         stage('Deploy image') {
             steps{
                 script{ 
-                    docker.withRegistry("https://"+registry,"ecr:us-east-2:"+registryCredential) {
+                    docker.withRegistry("https://"+registry,"ecr:us-east-1:"+registryCredential) {
                         dockerImage.push()
                     }
                 }
